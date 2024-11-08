@@ -55,6 +55,12 @@ namespace filesystem
         // Закрываем файл
         fclose(f);
     }
+
+/*
+* appends content to file 
+* @param path - path to target file
+* @param content - content to append
+*/
     void appendToFile(string path, string content)
     {
         writeFile(path,readFile(path) + content);
